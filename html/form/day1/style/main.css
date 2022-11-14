@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+
+}
+.container{
+    width: 800px;
+    margin: 40px auto;
+}
+.body-section{
+    background-color: #9F8772;
+    height: 900px;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.body-section-flex{
+    display: flex;
+    margin-top: 20px;
+ 
+    
+}
+.body-white{
+    background-color: white;
+    border-radius: 20px 0px 0px 20px;
+    width: 400px;
+    padding: 35px;
+}
+.body-pink{
+    background-color: #2d4ec5;
+    border-radius: 0px 20px 20px 0px;
+    width: 400px;
+    height: 600px;
+    padding: 35px;
+}
+.button{
+  
+    background-color: #2d4ec5;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(0, 0, 0);
+}
