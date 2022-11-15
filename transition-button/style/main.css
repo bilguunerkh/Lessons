@@ -1,0 +1,46 @@
+.shadow{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin: 300px auto;
+    position: relative;
+    box-shadow: -1px -1px 25px 0px rgba(10, 81, 167, 0.75);
+-webkit-box-shadow: -1px -1px 25px 0px rgba(24, 66, 166, 0.75);
+-moz-box-shadow: -1px -1px 25px 0px rgba(15, 74, 162, 0.75);
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    border-radius: 50%;
+    transition-property: top,left,border-radius;
+    transition-duration: 2s,1s,2s;
+}
+.ball-1{
+    background-color: rgb(18, 102, 198);
+    z-index: 1000;
+}
+.ball-2{
+    background-color: rgb(54, 198, 18);
+    z-index: 900;
+}
+.ball-3{
+    background-color: rgb(126, 18, 198);
+    z-index: 800;
+}
+.shadow:hover .ball-1{
+    top: 0px;
+    left: 0px;
+}
+.shadow:hover .ball-2{
+    top: 0px;
+    left: 400px;
+    border-radius: 0;
+}
+.shadow:hover .ball-3{
+    top: 400px;
+    left: 400px;
+}

@@ -1,6 +1,8 @@
 
 *{
     margin: 0;
+    padding: 6px 0;
+
 
 }
 .container{
@@ -12,34 +14,98 @@
     height: 900px;
     padding: 40px;
     font-family: 'Montserrat', sans-serif;
-
-
+    
 }
 .body-section-flex{
     display: flex;
-    margin-top: 20px;
+    margin-top: 200px;
  
     
 }
 .body-white{
     background-color: white;
     border-radius: 20px 0px 0px 20px;
-    width: 400px;
+    width: 600px;
     padding: 35px;
 }
 .body-pink{
     background-color: #2d4ec5;
     border-radius: 0px 20px 20px 0px;
-    width: 400px;
-    height: 600px;
+    width: 600px;
+    height: 400px;
     padding: 35px;
 }
 .button{
   
     background-color: #2d4ec5;
     color: white;
-    width: 100px;
-    height: 30px;
-    border-radius: 15px;
-    border: 1px solid rgb(0, 0, 0);
+    width: 150px;
+    height: 40px;
+    border-radius: 35px;
+    border: 2px solid rgb(148, 148, 148);
 }
+.body-pink-input input{
+  
+    width: 100%;
+    background-color: #2d4ec5;
+    padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  
+}
+
+input::placeholder{
+    color: white;
+}
+.body-pink-flex input{
+
+    padding: 8px;
+    background-color: #2d4ec5;
+    padding: 11px ;
+
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: white;
+}
+.body-pink-button button{
+    background-color: white;
+    border: none;
+}
+.body-white-flex input::placeholder{
+    color: #000000;
+    opacity: 0.7;
+}
+.body-white-flex input{
+    
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 11px ;
+}
+.body-white-input input::placeholder{
+    color: black;
+    opacity: 0.7;
+}
+.body-white-input input{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+/* .body-white-select{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+} */
+    

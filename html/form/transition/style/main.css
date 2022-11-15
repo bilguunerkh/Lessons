@@ -1,0 +1,32 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(43, 107, 226);
+
+    /* transition-delay: 2s; */
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+div:active{
+    width: 1200px;
+    background-color: rgb(110, 110, 110);
+    
+}
+
+.number-2-box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(154, 55, 220);
+
+    /* transition-delay: 2s; */
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+.number-2-box:hover{
+    width: 1200px;
+    background-color: rgb(0, 0, 0);
+
+
+}
