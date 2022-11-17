@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(32, 97, 209);
+}
+/* Mobile Display */
+@media screen and (max-width: 480px){
+    body{
+        background-color: rgb(208, 48, 202);
+        
+    }
+
+    h1::after{
+        content: "Mobile Display ";
+        color: rgb(0, 81, 194);
+    }
+
+}
+/* Ipad and Table Display */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    body{
+        background-color: rgb(203, 86, 86);
+    }
+    h1::after{
+        content: "Ipad and Table Display";
+        color: rgb(255, 255, 255);
+    }
+}
+/* Laptop and Small Screens Display */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    body{
+        background-color: rgb(93, 219, 216);
+    }
+    h1::after{
+        content: "Laptop and Small Screens Display";
+        color: rgb(227, 41, 41);
+    }
+}
+/* IPHONE 100 PRO MAX */
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    body{
+        background-color: rgb(110, 39, 180);
+    }
+    h1::after{
+        content: "IPHONE 100 PRO MAX";
+        color: rgb(255, 255, 255);
+    }
+}
