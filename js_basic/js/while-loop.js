@@ -132,11 +132,11 @@ while(erh > 0){
 
 
 if(isTaav){
-    // console.log(`${ntoo} ni RANDOM tootoi taarj baina 🟩`)
-    alert("Zuw bn");
+    console.log(`${ntoo} ni RANDOM tootoi taarj baina 🟩`)
+
 } else{
-    // console.log(`${ntoo} ni RANDOM tootoi taarahgui baina 🟥 `)
-    alert("buruu baina");
+    console.log(`${ntoo} ni RANDOM tootoi taarahgui baina 🟥 `)
+
 }
 
 
