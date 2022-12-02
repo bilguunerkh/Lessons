@@ -71,20 +71,79 @@
 
 // }
 
-let a = prompt("тоог хэдэн оронтойг хэвлэнэ");
-let d = Number(a);
 
-if(0>d){
-    console.log(" 🟥 🟥 🟥");
+
+
+//toonii orng tooloh
+
+// let a = prompt("ta hussen toogoo oruulna uu");
+// a = Number(a);
+
+// let count = 0;
+
+// while(a!==0){
+//     count = count + 1;
+//     a = Math.floor(a/10);    
+// }
+// console.log(count);
+
+
+
+
+let e = prompt("ta duriin too avna uu");
+e = Number(e);
+let q = prompt("Ta dahin duriin too avna uu");
+q  = Number(q);
+
+let isTaav = true;  
+
+let max,min;
+if(e < q){
+    max = q;
+    min = e;
 } else{
-    let digit = 0;
-    while(d % 10 !== 0){
-        digit = digit + 1;
+    max = e;
+    min = q;
+}
+
+let random = (Math.round(Math.random() * (max-min) + min));
+console.log(`Random: ${random}`);
+
+
+
+
+let erh = 2;
+let ntoo = 0;
+
+while(erh > 0){
+   ntoo = prompt("Ta taah toogoo oruulna uu???"); 
+   ntoo = Number(ntoo);
+    if(ntoo === random){
+        isTaav = true;
+        break;
     }
-    console.log(`${digit}`)
-    
+    else{   
+        erh = erh - 1;
+        console.log(`Too taah erh ${erh},${ntoo},${random} baina.`);
+        isTaav = false;    
+    }
 
 }
+
+
+if(isTaav){
+    // console.log(`${ntoo} ni RANDOM tootoi taarj baina 🟩`)
+    alert("Zuw bn");
+} else{
+    // console.log(`${ntoo} ni RANDOM tootoi taarahgui baina 🟥 `)
+    alert("buruu baina");
+}
+
+
+
+
+
+
 
 
 
