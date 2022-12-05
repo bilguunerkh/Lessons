@@ -85,14 +85,7 @@ for(let i = 0; i < itCompanies.length;i++){
 
 }
 if (isBaigaa){
-    console.log("🟩 🟩 🟩");
+    console.log("🟩 🟩 🟩 🟩 🟩 🟩");
 }else{
-    console.log("🟥 🟥 🟥");
+    console.log("🟥 🟥 🟥 🟥 🟥 🟥");
 }
-
-
-
-
-
-
-
