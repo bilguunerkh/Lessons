@@ -90,54 +90,82 @@
 
 
 
-let e = prompt("ta duriin too avna uu");
-e = Number(e);
-let q = prompt("Ta dahin duriin too avna uu");
-q  = Number(q);
+// let e = prompt("ta duriin too avna uu");
+// e = Number(e);
+// let q = prompt("Ta dahin duriin too avna uu");
+// q  = Number(q);
 
-let isTaav = true;  
+// let isTaav = true;  
 
-let max,min;
-if(e < q){
-    max = q;
-    min = e;
-} else{
-    max = e;
-    min = q;
-}
+// let max,min;
+// if(e < q){
+//     max = q;
+//     min = e;
+// } else{
+//     max = e;
+//     min = q;
+// }
 
-let random = (Math.round(Math.random() * (max-min) + min));
-console.log(`Random: ${random}`);
-
-
+// let random = (Math.round(Math.random() * (max-min) + min));
+// console.log(`Random: ${random}`);
 
 
-let erh = 2;
-let ntoo = 0;
 
-while(erh > 0){
-   ntoo = prompt("Ta taah toogoo oruulna uu???"); 
-   ntoo = Number(ntoo);
-    if(ntoo === random){
-        isTaav = true;
-        break;
-    }
-    else{   
-        erh = erh - 1;
-        console.log(`Too taah erh ${erh},${ntoo},${random} baina.`);
-        isTaav = false;    
-    }
+// let erh = 2;
+// let ntoo = 0;
 
-}
+// while(erh > 0){
+//    ntoo = prompt("Ta taah toogoo oruulna uu???"); 
+//    ntoo = Number(ntoo);
+//     if(ntoo === random){
+//         isTaav = true;
+//         break;
+//     }
+//     else{   
+//         erh = erh - 1;
+//         console.log(`Too taah erh ${erh},${ntoo},${random} baina.`);
+//         isTaav = false;    
+//     }
+
+// }
 
 
-if(isTaav){
-    console.log(`${ntoo} ni RANDOM tootoi taarj baina 🟩`)
+// if(isTaav){
+//     console.log(`${ntoo} ni RANDOM tootoi taarj baina 🟩`)
 
-} else{
-    console.log(`${ntoo} ni RANDOM tootoi taarahgui baina 🟥 `)
+// } else{
+//     console.log(`${ntoo} ni RANDOM tootoi taarahgui baina 🟥 `)
 
-}
+// }
+
+
+
+// let p = prompt("Ta utasnii dugaaraa oruulna uu");
+// p = Number(p);
+
+// // console.log(p.substring(1,4));
+
+// let count = 0;
+// isMun = true;
+
+// while(p !== 0){
+//     count = count + 1;
+//     p = Math.floor(p/10);
+// }
+// if( count !== 12 && p.substring(1,3) !== '976'){
+//     isMun = false;
+// }
+
+// if(isMun){
+//     console.log(`${count}, 🟩`);
+// } else{
+//     console.log(`${count}, 🟥`);
+
+// }
+
+
+
+
 
 
 
