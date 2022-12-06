@@ -68,8 +68,8 @@
 // }
 
 
-let q = prompt("Ta haih ugee oruulna uu.")
-let itCompanies = ['Facebook','Google','Microsoft','Apple','IBM','Oracle'];
+let q = prompt("Onjogo mine ner ee bicheeed hai.")
+let itCompanies = ['Zenee','khulan','Bilguunerkh','Nomin','Bat','Oracle'];
 let isBaigaa = true;
 
 let slice = (itCompanies.slice());
@@ -77,7 +77,7 @@ console.log(slice);
 for(let i = 0; i < itCompanies.length;i++){
     if(itCompanies[i] === q){
         isBaigaa = true;
-        console.log(`Tanii haisan zuil: ${i}r bairlald baina.`);
+        console.log(`Tanii ner: ${i}r bairlald baina.`);
         break;
     } else{
         isBaigaa = false;
@@ -88,4 +88,20 @@ if (isBaigaa){
     console.log("🟩 🟩 🟩 🟩 🟩 🟩");
 }else{
     console.log("🟥 🟥 🟥 🟥 🟥 🟥");
+} 
+
+
+
+
+//count word
+let p = prompt("Хайх үгээ оруулна уу");
+
+let data = ['Засгийн', 'газарт', '6.4', 'сая', 'тонн', 'нүүрс', 'алдагдсан', 'гэх', 'мэдээлэл', 'ирээгүй', 'байна.', 'Бодит', 'Бодит', 'Бодит', 'их', 'хэмжээний', 'нүүрс', 'алдагдсан', 'гэх', 'асуудал', 'байна', 'байна.', 'Хууль', 'хяналтын', 'байгууллага', 'хяналт', 'шалгалтын', 'ажил', 'явуулж', 'байна'];
+let count = 0;
+
+for(let i = 0; i < data.length; i++){
+    if(data[i] === p){
+        count = count + 1;
+    }
 }
+console.log(`🧮 ${p} gedeg ug: ${count} orson baina.`);
