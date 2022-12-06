@@ -1,4 +1,3 @@
-
 let q = prompt("Onjogo mine ner ee bicheeed hai.")
 let itCompanies = ['Zenee','khulan','Bilguunerkh','Nomin','Bat','Oracle'];
 let isBaigaa = true;
