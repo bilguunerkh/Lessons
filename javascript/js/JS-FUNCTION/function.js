@@ -78,42 +78,71 @@
 
 
 
+
+
 // Өгөгдсөн array -аас өгөгдсөн тоо байгаа эсэхийг олох функц бич.
-let p = prompt("Хайх тоогоо оруулна уу");
-p = Number(p);
-let isWoo = true;
+// let p = prompt("Хайх тоогоо оруулна уу");
+// p = Number(p);
+// let isWoo = true;
+
+
+// let data = [1,2,3,4,5];
+// // let slice = (data.slice());
+// // console.log(slice);
+// console.log(data);
+
+// let find  = (arr,p) => {
+//     let i=0;
+//     for(i = 0; i < arr.length; i++){
+//         if(arr[i] === p){
+//             isWoo = true;
+//             break;
+//         } else{
+//             isWoo = false;
+//         }
+//     }
+//     if (isWoo){
+//         return i;
+//     } else{
+//         return -1;
+ 
+//     }
+// }
 
 
 
-let data = [1,2,3,4,5];
-// let slice = (data.slice());
-// console.log(slice);
+// console.log(find(data,p));
+
+
+
+//Өгөгдсөн тэмдэгт мөрөөс -аас өгөгдсөн тэмдэгт байгаа эсэхийг олох функц бич.
+
+let p = prompt("Хайх үгээ оруулна уу");
+let isBaina = true;
+
+let data = ['Mungunshagai','Zenee','Dulguun','Bilguunerkh','Ugtakhbayar'];
+
 console.log(data);
 
-let find  = (arr,p) => {
-    let i=0;
-    for(i = 0; i < arr.length; i++){
-        if(arr[i] === p){
-            isWoo = true;
-         
+let names = (p) =>{
+    let i = 0;
+    for(i = 0; i < data.length; i++){
+        if(data[i] === p){
+            isBaina = true;
             break;
-        } else{
-            isWoo = false;
+        }
+        else{
+            isBaina = false;
         }
     }
-    if (isWoo){
-        return i;
+    if(isBaina){
+        return console.log(`🟩 Tanii ner ${i}r bairlald baina.`);
     } else{
-        return -1;
- 
+        return console.log(`🟥 Tanii ner oldsongui!!!`);
     }
 }
+console.log(names(p));
 
-
-
-
-
-console.log(find(data,p));
 
 
 
