@@ -110,6 +110,15 @@ console.log(arr40);
 
 
 
+
+//replace(pattern, replacement) зөвхөн эхний олдсон string-г шинэчлэн солидог.
+const o = ' bilguunerkh mongoliin hamgiin chadvarlag hogjauulegch';
+console.log(o.replace('hogja','hogj'));
+
+console.log(o.replaceAll('a','O'));
+
+
+
 //split(pattern) тухайн string-г тодорхой заасан pattern бүрээр таслаж шинээр array үүсгэнэ.
 const str = 'bilguunerkh hamgiin sain suragch';
 
@@ -123,15 +132,43 @@ const ekoeko = str.split();
 console.log(ekoeko);
 
 const ekoekoeko = str.split('');
+console.log(ekoekoeko[1]);
+
+
+const mama = str.split('');
 console.log(ugs[0]);
 
+let tt = "Yier";
+console.log(tt[0]);
 
 
-//replace(pattern, replacement) зөвхөн эхний олдсон string-г шинэчлэн солидог.
-const o = ' bilguunerkh mongoliin hamgiin chadvarlag hogjauulegch';
-console.log(o.replace('hogja','hogj'));
 
-console.log(o.replaceAll('a','O'));
+
+// let p = prompt("эхний үсгээр хайх");
+
+carBrands = [
+    ["Aston Martin Lagonda Ltd", "UK", 2016],
+    // ["Audi", "Germany", 2016],
+    // ["BMW", "Germany", 2016],
+    // ["Chevrolet", "USA", 2016],
+    // ["Dodge", "USA", 2016],
+    // ["Ferrari", "Italy", 2016],
+    // ["Honda", "Japan", 2016],
+    // ["Jaguar", "UK", 2016],
+    // ["Lamborghini", "Italy", 2016],
+    ];
+const momo = carBrands.split(' ');
+console.log(momo[0]);
+
+
+
+
+
+
+
+
+
+
 
 
 
