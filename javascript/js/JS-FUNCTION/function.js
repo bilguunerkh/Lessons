@@ -117,31 +117,57 @@
 
 //Өгөгдсөн тэмдэгт мөрөөс -аас өгөгдсөн тэмдэгт байгаа эсэхийг олох функц бич.
 
-let p = prompt("Хайх үгээ оруулна уу");
-let isBaina = true;
+// let p = prompt("Хайх үгээ оруулна уу");
+// let isBaina = true;
 
-let data = ['Mungunshagai','Zenee','Dulguun','Bilguunerkh','Ugtakhbayar'];
+// let data = ['Mungunshagai','Zenee','Dulguun','Bilguunerkh','Ugtakhbayar'];
+
+// console.log(data);
+
+// let names = (p) =>{
+//     let i = 0;
+//     for(i = 0; i < data.length; i++){
+//         if(data[i] === p){
+//             isBaina = true;
+//             break;
+//         }
+//         else{
+//             isBaina = false;
+//         }
+//     }
+//     if(isBaina){
+//         return console.log(`🟩 Tanii ner ${i}r bairlald baina.`);
+//     } else{
+//         return console.log(`🟥 Tanii ner oldsongui!!!`);
+//     }
+// }
+
+// console.log(names(p));
+
+
+
+//Өгөгдсөн array - ийн дундажыг олох функц бич.
+
+let data = [1,2,3,4,5,6,7,8,9,10,1];
+let sum = 0;
 
 console.log(data);
+console.log(`🟩 Энэ хүү ARRAY нь: ${data.length} урттай байна.`);
 
-let names = (p) =>{
+
+
+let gol = (data) =>{
     let i = 0;
-    for(i = 0; i < data.length; i++){
-        if(data[i] === p){
-            isBaina = true;
-            break;
-        }
-        else{
-            isBaina = false;
-        }
-    }
-    if(isBaina){
-        return console.log(`🟩 Tanii ner ${i}r bairlald baina.`);
-    } else{
-        return console.log(`🟥 Tanii ner oldsongui!!!`);
-    }
+for(i = 0; i < data.length; i++){
+    sum = sum + data[i];
+
 }
-console.log(names(p));
+
+let m = sum/data.length;
+return console.log(`Дундаж: ${m}`);
+
+}
+console.log(gol(data));
 
 
 
