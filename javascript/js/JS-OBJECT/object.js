@@ -87,47 +87,127 @@
 
 
 
-let classmate = [
+// let classmate = [
+//     {
+//         name: "Bilguunerkh",
+//         birth: 2004,
+//         hobby: "basketball",
+//         nosingle: true,
+// },
+//     {
+//         name: "Zulaa",
+//         birth: 1997,
+//         hooby: "shopping",
+//         nosingle: false,
+// },
+//     {
+//         name: "Dulguun",
+//         birth: 2004,
+//         hobby: "anime",
+//         nosingle: true,
+// },
+//     {
+//         name: "Muugii",
+//         birth: 1987,
+//         hobby: "code",
+//         nosingle: false,
+// },
+//     {
+//         name: "Khulan",
+//         birth: 2000,
+//         hobby: "nehmel",
+//         nosingle: false,
+//     }
+// ]
+
+// let angi = () => {
+//     let o = 2022;
+//     let i = 0;
+//     for(i = 0; i < classmate.length; i++){
+//         ognoo =  o - classmate[i].birth;
+//         if(ognoo > 20 && classmate[i].nosingle === false){
+//             console.log(`🟥 Сурагч ${classmate[i].name} та ${ognoo} настай single учраас буцаагдлаа`);
+//         }
+//     }
+// }
+// console.log(angi(classmate));
+
+
+
+
+
+let datas = [
     {
-        name: "Bilguunerkh",
-        birth: 2004,
-        hobby: "basketball",
-        nosingle: true,
-},
+        name:   "Alex",
+        email: 'alex@alex.com',
+        skills: ['HTML', 'CSS', 'JavaScript','CSS', 'JavaScript', 'React','MongoDB', 'Express', 'React', 'Node','CSS', 'JavaScript', 'React','MongoDB', 'Express', 'React', 'Node'],
+        age: 45,
+        isLoggedIn: false,
+        points: 30,
+      },
     {
-        name: "Zulaa",
-        birth: 1997,
-        hooby: "shopping",
-        nosingle: false,
-},
+        name:   "Job",
+        email: 'job@job.com',
+        skills: ['HTML', 'CSS', 'JavaScript',],
+        age: 25,
+        isLoggedIn: false,
+        points: 50,
+      },
     {
-        name: "Dulguun",
-        birth: 2004,
-        hobby: "anime",
-        nosingle: true,
-},
+        name:   "Brook",
+        email: 'daniel@daniel.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+        age: 39,
+        isLoggedIn: true,
+        points: 50,
+      },
     {
-        name: "Muugii",
-        birth: 1987,
-        hobby: "code",
-        nosingle: false,
-},
+        name:   "Daniel",
+        email: 'daniel@alex.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'Python','HTML', 'CSS', 'JavaScript', 'React','MongoDB', 'Express', 'React', 'Node'],
+        age: 25,
+        isLoggedIn: false,
+        points: 40,
+      },
     {
-        name: "Khulan",
-        birth: 2000,
-        hobby: "nehmel",
-        nosingle: false,
-    }
+        name:   "John",
+        email: 'john@john.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+        age: 20,
+        isLoggedIn: true,
+        points: 50,
+      },
+    {
+        name:   "Thomas",
+        email: 'thomas@thomas.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'React','MongoDB', 'Express', 'React', 'Node'],
+        age: 18,
+        isLoggedIn: false,
+        points: 40,
+      },
+    {
+        name:    "Paul",
+        email: 'paul@paul.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+        age: 25,
+        isLoggedIn: false,
+        points: 40,
+      }
 ]
 
-let angi = () => {
-    let o = 2022;
+let mern = () => {
     let i = 0;
-    for(i = 0; i < classmate.length; i++){
-        ognoo =  o - classmate[i].birth;
-        if(ognoo > 20 && classmate[i].nosingle === false){
-            console.log(`🟥 Сурагч ${classmate[i].name} та ${ognoo} настай single учраас буцаагдлаа`);
+    let max = 0;
+    let namess = 0;
+    for(i = 0; i < datas.length; i++){
+        for(j = i+1; j < datas.length; j++){
+            if(max < datas[j].skills.length){
+                max = datas[i].skills.length;
+                namess = datas[i].name;
+            }
         }
     }
+    return console.log(max,namess);
+
 }
-console.log(angi(classmate));
+console.log(mern());
