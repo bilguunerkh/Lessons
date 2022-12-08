@@ -122,6 +122,9 @@ console.log(o.replaceAll('a','O'));
 //split(pattern) тухайн string-г тодорхой заасан pattern бүрээр таслаж шинээр array үүсгэнэ.
 const str = 'bilguunerkh hamgiin sain suragch';
 
+const ekoekoeko = str.split('');
+console.log(ekoekoeko[0]);
+
 const ugs = str.split(' ');
 console.log(ugs);
 
@@ -131,8 +134,7 @@ console.log(ekos[2]);
 const ekoeko = str.split();
 console.log(ekoeko);
 
-const ekoekoeko = str.split('');
-console.log(ekoekoeko[1]);
+
 
 
 const mama = str.split('');
@@ -159,19 +161,3 @@ carBrands = [
     ];
 const momo = carBrands.split(' ');
 console.log(momo[0]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
