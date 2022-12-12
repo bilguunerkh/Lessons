@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#myBtn{
+    background-color: #FFFBEB;
+    color: rgb(0, 0, 0);
+    width: 120px;
+    height: 40px;
+    border: 2px;
+    border-radius: 15px;
+    margin: 80px;
+    border: 2px solid black;
+
+}
+.container{
+    display: flex;
+    gap: 10px;
+}
+.box{
+    border: 2px solid black; 
+    width: 200px;
+    height: 200px;
+
+    
+}
