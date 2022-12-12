@@ -63,6 +63,10 @@
 //         type: "dulguun",
 //         sound: "AIKAAAAAA"
 // },
+// {
+//   type: "eazy",
+//   sound: "online"
+// },
 // ]
 
 // let blue = () => {
@@ -134,6 +138,119 @@
 
 
 
+let supermarket = [
+  {
+    productName: "Bakery",
+    unitPrice: 5000,
+    amount: 24,
+    totalPrice: 500000,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Chocolate",
+    unitPrice: 3000,
+    amount: 18,
+    totalPrice: 54.000,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Schoko",
+    unitPrice: 5900,
+    amount: 3,
+    totalPrice: 17700,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Milk",
+    unitPrice: 4700,
+    amount: 100,
+    totalPrice: 470000,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Condom",
+    unitPrice: 6200,
+    amount: 40,
+    totalPrice: 248000,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Panta",
+    unitPrice: 4400,
+    amount: 100,
+    totalPrice: 440000,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Ekos",
+    unitPrice: 1850,
+    amount: 86,
+    totalPrice: 159100,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Ezegtei",
+    unitPrice: 11200,
+    amount: 69,
+    totalPrice: 772800,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Eden",
+    unitPrice: 34000,
+    amount: 35,
+    totalPrice: 1190000,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Siesta",
+    unitPrice: 6000,
+    amount: 84,
+    totalPrice: 504000,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Nescafe",
+    unitPrice: 13500,
+    amount: 12,
+    totalPrice: 162000,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+  {
+    productName: "Atar",
+    unitPrice: 2200,
+    amount: 0,
+    totalPrice: 1100000,
+    casherld: 1,
+    date: '2022-11-01'
+  },
+
+]
+
+
+let tailan = () => {
+  let i = 0, sum = 0,goods = 0;
+  for (i = 0; i < supermarket.length; i++){
+    sum = sum + supermarket[i].totalPrice;
+    goods = goods + supermarket[i].amount;
+  }
+  console.log(`Нийт борлуулалтын дүн: ${sum}₮`);
+  console.log(`Нийт борлуулагдсан барааны тоо: ${goods}ширхэг`);
+}
+console.log(tailan());
+
+
 
 
 let datas = [
@@ -165,7 +282,7 @@ let datas = [
         name:   "Daniel",
         email: 'daniel@alex.com',
         skills: ['HTML', 'CSS', 'JavaScript', 'Python','HTML', 'CSS', 'JavaScript', 'React','MongoDB', 'Express', 'React', 'Node'],
-        age: 25,
+        age: 75,
         isLoggedIn: false,
         points: 40,
       },
@@ -181,7 +298,7 @@ let datas = [
         name:   "Thomas",
         email: 'thomas@thomas.com',
         skills: ['HTML', 'CSS', 'JavaScript', 'React','MongoDB', 'Express', 'React', 'Node'],
-        age: 18,
+        age: 48,
         isLoggedIn: false,
         points: 40,
       },
@@ -189,25 +306,38 @@ let datas = [
         name:    "Paul",
         email: 'paul@paul.com',
         skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
-        age: 25,
+        age: 50,
         isLoggedIn: false,
         points: 40,
       }
 ]
 
 let mern = () => {
-    let i = 0;
-    let max = 0;
-    let namess = 0;
+    let i = 0,max = 0,maxNas = 0,namess = 0,name = 0,isBaina = true;
     for(i = 0; i < datas.length; i++){
         for(j = i+1; j < datas.length; j++){
-            if(max < datas[j].skills.length){
+          if(maxNas < datas[j].age){
+            maxNas = datas[j].age;
+            name = datas[j].name;
+          }
+            if(max < datas[i].skills.length){
                 max = datas[i].skills.length;
                 namess = datas[i].name;
             }
+              if(datas[i].skills[i].length === 'MongoDB' && datas[i].skills[i].length === 'React' && datas[i].skills[i].length === 'Express' ){
+                isBaina = true;
+              }else{
+                isBaina = false;
+              }
         }
     }
-    return console.log(max,namess);
+    if(isBaina){
+      console.log(`🟩`)
+    } else{
+      console.log(`🟥`)
+    }
+    console.log(`Олон ур чадвар эзэмшсэн хүн: ${namess} нь ${max} ур чадвартай`);
+    console.log(`${name}: Хамгийн их настнууд: ${maxNas}настай`);
 
 }
 console.log(mern());
