@@ -2,16 +2,16 @@ const myButton = document.getElementById("myBtn");
 const divs = document.getElementsByClassName("box");
 
 
-const change = () => {
-    for(let i = 0; i < divs.length; i++){
-        let color = getColor;
-        divs[i].style.backgroundColor = color;
-    }
-}
+// const change = () => {
+//     for(let i = 0; i < divs.length; i++){
+//         let color = getColor;
+//         divs[i].style.backgroundColor = color;
+//     }
+// }
 
 
 
-const getColor = () => {
+const randomColor = () => {
     let red = Math.floor(Math.random() * 256);
     let green = Math.floor(Math.random() * 256);
     let blue = Math.floor(Math.random() * 256);
@@ -20,4 +20,11 @@ const getColor = () => {
 
 
 
-myButton.addEventListener("click", change);
+
+myButton.addEventListener("click",() =>{
+    for(let i = 0; i < divs.length; i++){
+        let color = randomColor;
+        divs[i].style.backgroundColor = color;
+    }
+
+})

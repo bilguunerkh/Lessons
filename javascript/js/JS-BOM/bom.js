@@ -1,38 +1,44 @@
-// function openWindow() {
-//     let url = 'http://www.google.com';
-//     let hemjee = 'height=600,width=800'
-//     window.open(url, "", hemjee);
-// }
-
-// alert ("Welcome to Pinecone academy");
-// let result = window.confirm(question);
+const startBtn = document.getElementsByTagName("button")[0];
+const stopBtn = document.getElementsByTagName("button")[1];
+const container = document.getElementById("container");
+const h1 = document.getElementsByTagName("h1")[0];
 
 
+let timer = null;
 
-// let ageStr = prompt("Ta heden nastai ve?");
-// let age = Number(ageStr);
-
-// let feedback = age >= 16 ? "🟩" : "🟥";
-// alert(feedback);
-
-
-let timeoutID;
-
-function showAlert(){
-    let ageStr = prompt("Ta heden nastai ve?");
-    let age = Number(ageStr);
-
-    let feedback = age >=16 ?  "🟩" : "🟥";
-    alert(feedback);
-}
-function cancelAlert(){
-    timeoutID = setTimeout(alert, 10, 'Demo Demo!');
+const ekoerkhe = () => {
+    seconds = new Date().getSeconds();
+    minutes = new Date().getMinutes();
+    hours = new Date().getHours();
+    h1.innerHTML = `<span style="color: blue">TIME:</span>: ${hours}:${minutes}:${seconds}`;
 }
 
 
-let print = 0;
-setInterval(startInterval, 1000);
-function setInterval(){
-    console.log(print);
-    print = print + 2;
+
+const stop = () => {
+    clearInterval(timer);
 }
+
+
+const start = () => {};
+    timer = setInterval(ekoerkhe, 1000);
+
+
+
+
+startBtn.addEventListener("click",start);
+stopBtn.addEventListener("click",() =>{
+    location = "";
+});
+
+
+
+const con = `
+<div class="blue">
+   <div class="boxa"></div>
+    <div class="boxa"></div>
+    <div class="boxa"></div>
+</div>
+`;
+container.innerHTML = con;
+

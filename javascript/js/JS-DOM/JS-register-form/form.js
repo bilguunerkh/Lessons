@@ -1,23 +1,22 @@
 
 const inputs = document.getElementsByTagName("input");
 const hedbaina = document.getElementsByTagName("input");
-let button = document.getElementsByClassName("registerBtn");
+const regisBtn = document.getElementsByClassName("registerBtn")[0];
+const loginBtn = document.getElementsByClassName("loginBtn")[0];
 
-// for(let i = 0; i < hedbaina; i++){
-//     inputs[i].addEventListener("change",() => {
-//         console.log(inputs.email.value);
-//         console.log(inputs.psw.value);
-//         console.log(inputs.repeatPsw.value);
-//     })
-// }
-let i = 0;
 
-let tool = () =>{
-    for( i = 0; i < hedbaina; i++){
-        console.log(inputs.email.value);
-        console.log(inputs.psw.value);
-        console.log(inputs.repeatPsw.value);
 
-    }
+regisBtn.addEventListener("click",() => {
+    console.log(hedbaina[0].value);
+    console.log(hedbaina[1].value);
+    console.log(hedbaina[2].value);
+});
+
+let locations = () => {
+    location = "login.html";    
 }
-inputs[i].addEventListener("change",tool);
+loginBtn.addEventListener("click",locations);
+
+
+
+
