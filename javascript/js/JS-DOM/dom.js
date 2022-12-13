@@ -1,22 +1,23 @@
-const myBtn = document.getElementById("myBtn");
-
+const myButton = document.getElementById("myBtn");
 const divs = document.getElementsByClassName("box");
 
-const solih = () => {
+
+const change = () => {
     for(let i = 0; i < divs.length; i++){
-        let color = randomColor();
+        let color = getColor;
         divs[i].style.backgroundColor = color;
     }
 }
 
 
 
-let changee = () => {
-    let red = Math.floor(Math.random() * 256).toString(16);
-    let green = Math.floor(Math.random() * 256).toString(16);
-    let blue = Math.floor(Math.random() * 256).toString(16);
-    return `#${red},${green},${blue}`
-};
+const getColor = () => {
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+    return `rgb(${red}, ${green}, ${blue})`;
+  };
 
 
-myBtn.addEventListener("click", changee);
+
+myButton.addEventListener("click", change);
