@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto:wght@300&display=swap");
+
+h1,h3{
+    margin-bottom: 0;
+
+}
+h1{
+    color: #113CFC;
+}
+body{
+    background-color: #000000;
+}
+.container{
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    font-family: "Noto sans", sans-serif;
+    font-size: 2.4rem;
+    max-width: 800px;
+    border-radius: 10px;
+    height: 800px;
+}
+.uld {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+p{
+    color: white;
+    font-size: 30px;
+}
+#date{
+    color: #686884;
+}
+#center-entry{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    height: 50px;
+}
+#centry-entry input,
+#to-do-input{
+    font-size: 1.4rem;
+    width: 30rem;
+    border: none;
+    border-top: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+    border-left: solid 1px  #ffffff;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+}
+#to-do-input:focus{
+    outline: none;
+}
+#add{
+    width: 5rem;
+    padding: 10px;
+    border: none;
+    background-color: #0077ff;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.5s;
+}
+#tasks{
+    margin: auto;
+    border-top: 2.5px solid rgb(190, 190, 190);
+    align-items: center;
+    max-width: 600px;
+}
+.task{
+    display: flex;
+    border: none;
+    background-color: #FFFBEB;
+    justify-content: space-between;
+    width: 35rem;
+    padding: 19px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.text{
+    border: none;
+    background-color: transparent;
+    padding: 0.3rem;
+    font-size: 25px;
+}
+.text:focus{
+    outline: none;
+}
+.actions button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin: 15px;
+}
