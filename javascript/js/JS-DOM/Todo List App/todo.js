@@ -22,11 +22,15 @@ const deleteTodo = (index) => {
   renderTodoApp();
 };
 
-let  Date = () => {
-    const dates = new Date();
-    dates.innerHTML = "";
-}
-dates.addEventListener("change",Date);
+
+
+const year = new Date().getFullYear();
+const month = new Date().getMonth();
+const day = new Date().getDay();
+dates.innerHTML = `ON SAR: ${year} : ${month+1} : ${day}`;
+
+
+
 
 const ustah = (e) => {
     const parent = e.parentNode.parentNode.parentNode;
@@ -78,8 +82,6 @@ const renderTodoApp = () => {
                 </div>`;
     taskList.innerHTML += item;
   }
-
-  
 };
 
 
