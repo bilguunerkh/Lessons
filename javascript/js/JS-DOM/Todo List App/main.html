@@ -22,11 +22,8 @@
         <div>
             <p id="chat">...</p>
             <section class="uld">
-                <h3 id="date"><strong>Он сар өдөр: <span style="color: white;">2022-12-31</span></strong></h3>
+                <h3 id="date"><strong>Он сар өдөр:<p id="date"></p></strong></h3>
             </section>
-            <!-- <section>
-                <h4 id="number-of-to-dos"></h4>
-            </section> -->
         </div>
 
 
@@ -34,6 +31,11 @@
         <div id="entry">
             <div id="center-entry">
                 <input type="text" id="to-do-input" placeholder="Таскын нэрээ оруулна уу ..." />
+                <select style="border: none; width: 100px;"  id="priority" name="priority" id="">
+                    <option value="high">Чухал</option>
+                    <option value="high">Дунд</option>
+                    <option value="high">Хамаагүй</option>
+                </select>
                 <button id="add">+ НЭМЭХ</button>
             </div>
         </div>
@@ -54,12 +56,3 @@
 </body>
 </html>
 
-
-<!-- <div class="task">
-    <input type="text" class="text" readonly value="${text}" />
-    <div class="actions">
-        <button class="edit"><i class="fas fa-pen"></i></button>
-        <button class="done"><i class="fas fa-check"></i></button>
-        <button class="delete" onclick="ustgah(this)"><i class="fas fa-trash"></i></button>
-    </div>
-</div>`; -->

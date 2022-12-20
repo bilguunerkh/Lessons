@@ -33,6 +33,10 @@ p{
 #date{
     color: #686884;
 }
+#date{
+    color: white;
+
+}
 #center-entry{
     display: flex;
     justify-content: center;
@@ -76,7 +80,7 @@ p{
     width: 35rem;
     padding: 19px;
     border: 1px solid black;
-    border-radius: 3px;
+    border-radius: 25px;
     margin-top: 20px;
 }
 .text{
@@ -94,4 +98,13 @@ p{
     border: none;
     font-size: 20px;
     margin: 15px;
+}
+.high{
+    border-color: red;
+}
+.medium{
+    border-color: green;
+}
+.low{
+    border-color: yellow;
 }
