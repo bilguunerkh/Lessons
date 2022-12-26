@@ -1,0 +1,33 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  padding: 70px;
+  background-color: rgb(255, 255, 255);
+}
+.containers {
+  margin-left: 500px;
+}
+#container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #1265d1;
+  width: 450px;
+  color: rgb(255, 255, 255);
+  height: 220px;
+}
+#dood {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #cacaca;
+  width: 450px;
+  color: rgb(0, 0, 0);
+  height: 280px;
+}
