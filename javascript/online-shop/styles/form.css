@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 150px;
+}
+.mb-1 input {
+  width: 420px;
+}
+#sumbitBtn {
+  width: 420px;
+}
+.form-label {
+  color: green;
+  font-size: 2.4rem;
+}
+form {
+  padding: 30px;
+  box-shadow: 0px 0px 25px -9px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 25px -9px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 25px -9px rgba(0, 0, 0, 1);
+  border-radius: 15px;
+}
+.form-note a {
+  margin-left: 8px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.form-note {
+  padding: 10px 0;
+  margin-top: 10px;
+}
+.footer-links {
+  display: flex;
+  list-style: none;
+  color: grey;
+  padding: 15px 0;
+  gap: 30px;
+  font-size: 15px;
+}
+.footer-links li a {
+  text-decoration: none;
+  color: rgb(79, 79, 79);
+  opacity: 0.8;
+}

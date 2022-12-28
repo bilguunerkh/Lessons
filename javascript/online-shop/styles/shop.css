@@ -3,15 +3,14 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  background: #fbfbfd;
+  background: #ebebeb;
 }
 .container {
-  width: 1912px;
-  padding: 5px;
+  margin: 150px auto;
 }
 .header-section-flex {
   display: flex;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(33, 33, 33, 0.8);
   height: 54px;
   width: 100%;
 }
@@ -20,8 +19,13 @@ body {
   gap: 40px;
   align-items: center;
   text-decoration: none;
+  margin: 0;
 }
 .header-section-flex a {
   text-decoration: none;
   color: white;
+}
+.cartCount {
+  background-color: red;
+  gap: 30px;
 }
