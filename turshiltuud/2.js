@@ -4,6 +4,8 @@ const productList = document.querySelector(".productList");
 const categoryList = document.querySelector(".categoryList");
 const cartList = document.querySelector(".cartList");
 const productsEvent = document.querySelector(".productsEvent");
+
+
 const cartCount = document.querySelector(".cartCount");
 const cartPrice = document.querySelector(".cartPrice");
 
@@ -67,6 +69,11 @@ const getCategoryProduct = async (category) => {
   displayProduct();
 };
 
+
+
+
+
+
 const getProducts = async () => {
   const response = await fetch("https://dummyjson.com/products");
   const data = await response.json();
@@ -76,6 +83,8 @@ const getProducts = async () => {
 };
 getCategories();
 getProducts();
+
+
 
 const addCart = (productId) => {
   const findIdx = cartProducts.findIndex((item) => item.id === productId);
@@ -98,3 +107,4 @@ const calculateCartPrice = () => {
   for (product of cartProducts) {
     sumPrice = sumPrice + product.price * product.count;
   }
+};

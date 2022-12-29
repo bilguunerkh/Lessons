@@ -11,12 +11,10 @@ let countPrices = [];
 
 
 
-
-
 const getProducts = async () => {
     const response = await fetch("https://dummyjson.com/products");
     const doto = await response.json();
-    allProducts = doto.products;
+    allProducts = doto;
     console.log(doto);
     displayProduct();
 
